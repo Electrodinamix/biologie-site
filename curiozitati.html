@@ -1,66 +1,163 @@
-﻿<!DOCTYPE html>
-<html lang="ro">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Curiozități Biologie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2180270642622891"
-     crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biology Curiosities</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Interesting biology facts and curiosities about cells, plants, animals and genetics — bite-sized and student-friendly." />
+  <meta name="keywords" content="biology, curiosities, cells, plants, animals, genetics, education" />
+  <meta name="author" content="BiologyEdu" />
+  <link rel="canonical" href="https://your-site.example/curiosities.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Biology Curiosities" />
+  <meta property="og:description" content="Short and surprising biology facts for curious minds." />
+  <meta property="og:type" content="website" />
+  <!-- replace with your real image -->
+  <meta property="og:image" content="https://your-site.example/images/og-biology.jpg" />
+  <meta property="og:url" content="https://your-site.example/curiosities.html" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Small custom styles (you can move to css/style.css) -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .hero { background: linear-gradient(180deg, #f8fff4 0%, #ffffff 100%); border-radius: .75rem; }
+    .fact-list li { margin-bottom:.5rem; line-height:1.45; }
+    .card-icon { font-size: 1.45rem; margin-right:.6rem; }
+    footer { background: #0f5132; color: #dffcf0; padding: 1.2rem 0; margin-top: 3rem; }
+    @media (min-width: 992px) { .container { max-width: 980px; } }
+  </style>
+
+  <!-- JSON-LD structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Biology Curiosities",
+    "description": "Short and surprising biology facts for curious minds.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BiologyEdu"
+    }
+  }
+  </script>
 </head>
 <body class="bg-light">
 
-    <div class="container py-5">
-        <h1 class="mb-4 text-success text-center">🔎 Curiozități din Biologie</h1>
+  <header class="container py-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow-sm p-3" aria-label="Main navigation">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="fs-4 text-success">🔎 Biology Curiosities</span>
+        </a>
 
-        <section class="mb-5">
-            <h2 class="text-primary">🧬 Celula</h2>
-            <ul>
-                <li>🧫 Unele bacterii pot supraviețui în spațiu timp de ani de zile.</li>
-                <li>🧠 Celulele nervoase pot trăi cât un om — peste 100 de ani!</li>
-                <li>🔬 Corpul uman are aproximativ 37 de trilioane de celule.</li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-4">
+    <section class="hero p-4 mb-4 shadow-sm">
+      <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+        <div class="flex-grow-1">
+          <h1 class="h2 mb-2 text-success">🔎 Short Biology Curiosities</h1>
+          <p class="mb-0 text-muted">Surprising facts about cells, plants, animals and genetics — perfect for students and curious readers.</p>
+        </div>
+        <!-- optional image: add your own file at images/biology-hero.jpg -->
+        <img src="images/biology-hero.jpg" alt="Biology illustration" class="img-fluid rounded" style="max-height:120px; width:auto;">
+      </div>
+    </section>
+
+    <div class="row g-4">
+
+      <article class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5 text-primary">🧬 Cells</h2>
+            <ul class="fact-list list-unstyled mt-3 mb-0">
+              <li>🧫 Some bacteria can survive in space for years under the right conditions.</li>
+              <li>🧠 Certain nerve cells can last a lifetime — over 100 years in humans.</li>
+              <li>🔬 The human body contains roughly 37 trillion cells.</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </article>
 
-        <section class="mb-5">
-            <h2 class="text-success">🌱 Plante</h2>
-            <ul>
-                <li>🌻 Floarea-soarelui își urmează mișcarea soarelui pe parcursul zilei (heliotropism).</li>
-                <li>🍀 Bambusul poate crește până la 90 cm într-o singură zi!</li>
-                <li>🌳 Sequoia este unul dintre cei mai longevivi arbori — poate trăi peste 3000 de ani.</li>
+      <article class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5 text-success">🌱 Plants</h2>
+            <ul class="fact-list list-unstyled mt-3 mb-0">
+              <li>🌻 Sunflowers track the sun across the sky during the day (heliotropism).</li>
+              <li>🍀 Bamboo can grow up to 90 cm (about 3 feet) in a single day under ideal conditions.</li>
+              <li>🌳 The giant sequoia can live for more than 3,000 years.</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </article>
 
-        <section class="mb-5">
-            <h2 class="text-danger">🐾 Animale</h2>
-            <ul>
-                <li>🦑 Caracatițele au trei inimi și sânge albastru.</li>
-                <li>🦋 Fluturii gustă cu picioarele.</li>
-                <li>🐘 Elefanții sunt capabili să-și amintească alte elefanți și locuri timp de zeci de ani.</li>
-                <li>🦇 Liliecii sunt singurele mamifere care pot zbura cu adevărat.</li>
-                <li>🐧 Pinguinii își propun parteneri oferindu-le pietre netede ca dar.</li>
-                <li>🦍 Gorilele își pot recunoaște reflexia într-o oglindă – semn de inteligență cognitivă.</li>
-                <li>🐬 Delfinii au nume proprii și se recunosc între ei după fluierături unice.</li>
-                <li>🐌 Unele specii de melci pot dormi până la 3 ani continuu în condiții de secetă.</li>
+      <article class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5 text-danger">🐾 Animals</h2>
+            <ul class="fact-list list-unstyled mt-3 mb-0">
+              <li>🦑 Octopuses have three hearts and blue blood.</li>
+              <li>🦋 Butterflies taste with their feet.</li>
+              <li>🐘 Elephants can remember other elephants and locations for decades.</li>
+              <li>🦇 Bats are the only mammals capable of true sustained flight.</li>
+              <li>🐧 Some penguins gift smooth stones to prospective mates.</li>
+              <li>🦍 Gorillas can recognize themselves in mirrors, a sign of self-awareness.</li>
+              <li>🐬 Dolphins have unique signature whistles used like names.</li>
+              <li>🐌 Certain snail species can aestivate for years during extreme droughts.</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </article>
 
-        <section class="mb-5">
-            <h2 class="text-warning">🧬 Genetică</h2>
-            <ul>
-                <li>👨‍👩‍👧‍👦 ADN-ul a doi oameni este 99,9% identic.</li>
-                <li>🍌 Oamenii împart ~60% din ADN cu bananele.</li>
-                <li>💡 Lungimea totală a ADN-ului din corpul uman ar ajunge la Soare și înapoi de sute de ori!</li>
+      <article class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5 text-warning">🧬 Genetics</h2>
+            <ul class="fact-list list-unstyled mt-3 mb-0">
+              <li>👨‍👩‍👧‍👦 Humans share about 99.9% of their DNA with each other.</li>
+              <li>🍌 Humans share roughly 60% of their genes with bananas.</li>
+              <li>💡 The total DNA in one human cell, stretched out, would be about 2 meters long; the total length across all your cells would reach astronomical distances.</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </article>
 
-        <a href="index.html" class="btn btn-outline-success">← Înapoi la pagina principală</a>
     </div>
 
-    <footer class="text-center mt-5 text-muted">
-        © 2025 BiologieEdu | Curiozități Biologice
-    </footer>
+    <div class="mt-4">
+      <a href="index.html" class="btn btn-outline-success">← Back to homepage</a>
+    </div>
 
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 BiologyEdu | Biological Curiosities</p>
+      <p class="small mb-0 text-muted">This site is educational. For classroom use and study only.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (no AdSense added) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
