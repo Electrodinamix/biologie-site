@@ -134,3 +134,12 @@ a {
 html, body {
     scroll-behavior: smooth;
 }
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
